@@ -1,0 +1,162 @@
+/* General: Normaliza el estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo base para todo el sitio */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contenedor común para las secciones */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para las secciones */
+section {
+    padding: 3rem 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para la galería de proyectos (apilando imágenes) */
+.project-gallery {
+    display: flex;
+    flex-direction: column;  /* Apilar las imágenes una sobre otra */
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-item {
+    width: 80%;
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project-item p {
+    font-size: 1rem;
+}
+
+/* Estilo del formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.7rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Diseño Responsivo - Media Queries */
+
+/* Para móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .project-item {
+        width: 90%;
+    }
+
+    form {
+        padding: 1rem;
+    }
+}
+
+/* Para tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .project-item {
+        width: 80%;
+    }
+}
+
+/* Para escritorios */
+@media (min-width: 1024px) {
+    .project-item {
+        width: 60%;
+    }
+}
